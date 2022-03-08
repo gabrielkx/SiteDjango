@@ -27,6 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
+DEFAULT_FROM_EMAIL = 'gabrielgamersbr@gmail.com'
 
 
 # Application definition
@@ -103,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'UTC'
 
@@ -121,7 +122,19 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+#DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #django_heroku.settings(locals())
 
-
+#email configuration
+"""EMAIL_BACKEND = config('EMAIL_BACKEND')
+EMAIL_HOST= config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT', cast = int)
+EMAIL_USE_TLS = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+"""
+EMAIL_HOST_USER='seucarlinhos6@gmail.com'
+EMAIL_HOST_PASSWORD='seucarlinhos12@'
+EMAIL_BACKEND= 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_PORT= '587'
+EMAIL_USE_TLS=True

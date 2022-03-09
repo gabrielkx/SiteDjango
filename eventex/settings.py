@@ -26,9 +26,9 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-SECRET_KEY='django-insecure-3a2c^7*sr#vr5t_8jucb2jwtinyqu7k=ggi#mlf(#fvjibj81+'
-DEBUG='True'
-ALLOWED_HOSTS='127.0.0.1, localhost, .herokuapp'
+#SECRET_KEY='django-insecure-3a2c^7*sr#vr5t_8jucb2jwtinyqu7k=ggi#mlf(#fvjibj81+'
+#DEBUG='True'
+#ALLOWED_HOSTS='127.0.0.1, localhost, .herokuapp'
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
 DEFAULT_FROM_EMAIL = 'seucarlinhos6@gmail.com'

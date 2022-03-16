@@ -27,8 +27,7 @@ EMAIL_HOST_USER='seucarlinhos6@gmail.com'
 EMAIL_HOST_PASSWORD='vaitomarnocuhacker'
 
 
-EMAIL_HOST_USER='seucarlinhos6@gmail.com'
-EMAIL_HOST_PASSWORD='vaitomarnocuhacker'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
@@ -36,7 +35,8 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
 
 DEFAULT_FROM_EMAIL = 'seucarlinhos6@gmail.com'
 
-
+EMAIL_HOST_USER = 'seucarlinhos6@gmail.com'
+EMAIL_HOST_PASSWORD = 'vaitomarnocuhacker'
 
 
 # Application definition

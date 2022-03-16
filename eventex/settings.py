@@ -33,7 +33,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
 
-DEFAULT_FROM_EMAIL = 'seucarlinhos6@gmail.com'
+DEFAULT_FROM_EMAIL = 'contato@eventex.com.br'
 
 EMAIL_HOST_USER = 'seucarlinhos6@gmail.com'
 EMAIL_HOST_PASSWORD = 'vaitomarnocuhacker'

@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 EMAIL_HOST_USER='seucarlinhos6@gmail.com'
 EMAIL_HOST_PASSWORD='vaitomarnocuhacker'
-DEBUG=True
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)

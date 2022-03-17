@@ -35,10 +35,10 @@ EMAIL_USE_TLS='True'
 
 
 
-=======
+
 EMAIL_HOST_USER='seucarlinhos6@gmail.com'
 EMAIL_HOST_PASSWORD='vaitomarnocuhacker'
->>>>>>> 4db658a (SS)
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)

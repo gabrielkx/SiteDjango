@@ -23,7 +23,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
-<<<<<<< HEAD
 EMAIL_HOST_USER= 'seucarlinhos6@gmail.com'
 EMAIL_HOST_PASSWORD= 'vaitomarnocuhacker'
 EMAIL_HOST_USER='seucarlinhos6@gmail.com'

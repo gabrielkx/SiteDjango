@@ -23,8 +23,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
+EMAIL_HOST_USER= 'seucarlinhos6@gmail.com'
+EMAIL_HOST_PASSWORD= 'vaitomarnocuhacker'
 EMAIL_HOST_USER='seucarlinhos6@gmail.com'
 EMAIL_HOST_PASSWORD='vaitomarnocuhacker'
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_PORT='587'
+EMAIL_USE_TLS='True'
+
 
 
 
